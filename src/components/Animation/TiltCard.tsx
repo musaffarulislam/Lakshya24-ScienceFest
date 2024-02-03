@@ -50,14 +50,14 @@ import { ReactNode } from "react";
           rotateX,
           transformStyle: "preserve-3d",
         }}
-        className="relative h-96 w-72 rounded-xl bg-gradient-to-br bg-neon-green from-opasity-20 to-opasity-30"
+        className="relative aspect-[4/3] w-full rounded-xl bg-gradient-to-br bg-neon-green from-opasity-20 to-opasity-30"
       >
         <div
           style={{
             transform: "translateZ(75px)",
             transformStyle: "preserve-3d",
           }}
-          className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
+          className="absolute inset-2 grid place-content-center rounded-xl bg-white shadow-lg"
         >
           {/* <p
             style={{
