@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         default: ["Poppins", "sans-serif"],
+        title: ['Signika Negative', "sans-serif"]
       },
       colors: {
         primary_dark : "#050a19",
