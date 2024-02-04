@@ -50,9 +50,10 @@ const LeftForm: React.FC = () => {
     console.log(temp);
 
     return (
-        <div className="md:w-1/2 px-8 md:px-8">
-            <h2 className="font-bold text-2xl text-white m-2">Register Here</h2>
+        <div className="w-full mt-4 md:mt-0 md:w-1/2 md:px-8">
+            <h2 className="font-title font-bold text-4xl text-neon-green mb-3">Register Here</h2>
             <Formik
+
                 initialValues={{
                     fullName: '',
                     email: '',
@@ -63,10 +64,10 @@ const LeftForm: React.FC = () => {
                 validationSchema={validationSchema}
                 onSubmit={handleSubmit}
             >
-                <Form className="flex flex-col gap-4">
-                    <div className='w-full'>
+                <Form className=" font-title">
+                    <div className='w-full my-5'>
                         <Field
-                            className="p-3 rounded-xl border bg-white w-full"
+                            className="p-3 rounded-xl border bg-white w-full text-gray-400"
                             type="text"
                             name="fullName"
                             placeholder="Full Name"
@@ -77,9 +78,9 @@ const LeftForm: React.FC = () => {
                             className="text-red-500 text-xs m-1"
                         />
                     </div>
-                    <div className='w-full'>
+                    <div className='w-full my-5'>
                         <Field
-                            className="p-3 rounded-xl border bg-white w-full"
+                            className="p-3 rounded-xl border bg-white w-full text-gray-400"
                             type="email"
                             name="email"
                             placeholder="Email"
@@ -91,9 +92,9 @@ const LeftForm: React.FC = () => {
                         />
                     </div>
 
-                    <div className='w-full'>
+                    <div className='w-full my-5'>
                         <Field
-                            className="p-3 rounded-xl border bg-white w-full"
+                            className="p-3 rounded-xl border bg-white w-full text-gray-400"
                             type="tel"
                             name="phone"
                             placeholder="Phone Number"
@@ -105,7 +106,7 @@ const LeftForm: React.FC = () => {
                         />
                     </div>
 
-                    <div className='w-full'>
+                    <div className='w-full my-5'>
                         <Field
                             as="select"
                             className="p-3 rounded-xl border bg-white w-full text-gray-400"
@@ -128,7 +129,7 @@ const LeftForm: React.FC = () => {
                         />
                     </div>
 
-                    {temp && <div className='w-full'>
+                    {temp && <div className='w-full my-5'>
                         <Field
                             as="select"
                             className="p-3 rounded-xl border bg-white w-full text-gray-400"
@@ -151,7 +152,7 @@ const LeftForm: React.FC = () => {
                     </div>}
 
                     <button
-                        className="bg-red-500 rounded-xl text-white py-2 hover:scale-105 duration-300"
+                        className="bg-red-500 rounded-xl text-white py-3 hover:scale-105 duration-300 w-full"
                         type="submit"
                     >
                         Register

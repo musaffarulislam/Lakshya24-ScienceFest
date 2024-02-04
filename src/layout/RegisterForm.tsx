@@ -2,20 +2,16 @@ import React from 'react';
 import LeftForm from '../components/RegisterForm/LeftForm';
 import RightForm from '../components/RegisterForm/RightForm';
 
-
 const RegisterForm: React.FC = () => {
-    return (
-        <>
-            <section className=" h-screen w-screen flex items-center justify-center">
-                <div className=" flex max-h-max max-w-max rounded-xl shadow-2xl p-5 items-center">
-
-                    <LeftForm />
-                    <RightForm />
-                </div>
-
-            </section>
-        </>
-    );
+  return (
+    <div className="flex justify-center items-center">
+      <div className="w-full flex flex-col-reverse md:flex-row justify-between items-center max-w-[1440px] p-4">
+        <LeftForm />
+        <RightForm />
+      </div>
+    </div>
+  );
 };
 
 export default RegisterForm;
+
