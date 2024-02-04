@@ -18,7 +18,7 @@ function App() {
         <Hero />
         <HorizontalScrollCarousel />
         <AboutUs />
-        <button onClick={() => {setFormValues('B','8') }}>click me for event='b' subevent='8'</button>
+        {/* <button onClick={() => {setFormValues('B','8') }}>click me for event='b' subevent='8'</button> */}
         <RegisterForm/>
       </main>
     </div>
